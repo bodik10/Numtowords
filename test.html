@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Test Numtowords</title>
+<script src="numtowords.js"></script>
+<body>
+
+<script>
+	[1,10,1000,2000,5000,10000,1000000,12341245,9000000000,100000000001,500000000000000].forEach(function(test){
+		console.log(test, Numtowords(test, 1));
+	});
+	
+	
+    for (var i=1; i<=100; i++){
+        var rand = Math.ceil(Math.random()*100000);
+        console.log(rand, Numtowords(rand));
+    }
+    
+</script>
+</body>
+</html>
